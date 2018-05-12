@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'log/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+LineLength:
+  Max: 120
