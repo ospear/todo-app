@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
+  <div>
     <p>{{ message }}</p>
+    <todo-list></todo-list>
   </div>
 </template>
 
@@ -10,7 +11,7 @@ export default {
     return {
       message: "Hello Vue!"
     }
-  }
+  },
 }
 </script>
 

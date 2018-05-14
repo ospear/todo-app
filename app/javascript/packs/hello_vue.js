@@ -6,15 +6,19 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 import Vue from 'vue'
-import App from '../app.vue'
+import App from './app.vue'
+import TodoList from './components/todo_list.vue'
+
+Vue.component('todo-list', TodoList)
 
 document.addEventListener('DOMContentLoaded', () => {
-  const el = document.body.appendChild(document.createElement('hello'))
+  // const el = document.body.appendChild(document.createElement('hello'))
   const app = new Vue({
-    el,
+    el: '#app',
     render: h => h(App)
   })
 
+  console.log(TodoList)
   console.log(app)
 })
 
